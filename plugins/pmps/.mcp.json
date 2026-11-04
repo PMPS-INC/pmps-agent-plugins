@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pmps": {
+      "type": "http",
+      "url": "https://api.pmps.ai/mcp"
+    }
+  }
+}

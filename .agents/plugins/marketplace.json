@@ -1,0 +1,20 @@
+{
+  "name": "pmps-inc",
+  "interface": {
+    "displayName": "PMPS"
+  },
+  "plugins": [
+    {
+      "name": "pmps",
+      "source": {
+        "source": "local",
+        "path": "./plugins/pmps"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    }
+  ]
+}

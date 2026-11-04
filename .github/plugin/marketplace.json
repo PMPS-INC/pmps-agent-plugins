@@ -1,0 +1,17 @@
+{
+  "name": "pmps-inc",
+  "owner": {
+    "name": "PMPS"
+  },
+  "metadata": {
+    "description": "PMPS plugins for AI agents"
+  },
+  "plugins": [
+    {
+      "name": "pmps",
+      "source": "./plugins/pmps",
+      "description": "Polymarket and Kalshi prediction-market search, odds and tracking through the PMPS MCP server.",
+      "category": "data"
+    }
+  ]
+}

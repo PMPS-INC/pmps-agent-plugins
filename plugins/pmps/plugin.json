@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pmps",
+  "version": "0.1.0",
+  "description": "Search Polymarket and Kalshi prediction markets, read live outcome probabilities and manage the PMPS tracked set. Sign in with a @pmps.ai Google account.",
+  "author": {
+    "name": "PMPS",
+    "url": "https://console.pmps.ai"
+  },
+  "homepage": "https://console.pmps.ai/mcp",
+  "repository": "https://github.com/PMPS-INC/pmps-agent-plugins",
+  "keywords": ["prediction-markets", "polymarket", "kalshi", "odds", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "PMPS",
+        "shortDescription": "Polymarket and Kalshi odds for your agent",
+        "longDescription": "Search Polymarket and Kalshi events and contracts, compare probabilities across platforms, read the latest observed prices and manage the organization-wide tracked set. Probabilities are normalized observations (0-1), not executable quotes. Requires a @pmps.ai Google account.",
+        "developerName": "PMPS",
+        "category": "Research",
+        "websiteURL": "https://console.pmps.ai/mcp",
+        "brandColor": "#111111",
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png"
+      }
+    }
+  }
+}

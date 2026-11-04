@@ -1,0 +1,21 @@
+{
+  "name": "pmps",
+  "displayName": "PMPS",
+  "version": "0.1.0",
+  "description": "Search Polymarket and Kalshi prediction markets, read live outcome probabilities and manage the PMPS tracked set. Sign in with a @pmps.ai Google account.",
+  "author": {
+    "name": "PMPS"
+  },
+  "publisher": "PMPS",
+  "homepage": "https://console.pmps.ai/mcp",
+  "repository": "https://github.com/PMPS-INC/pmps-agent-plugins",
+  "logo": "assets/logo.png",
+  "category": "data",
+  "keywords": ["prediction-markets", "polymarket", "kalshi", "odds", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": {
+    "pmps": {
+      "url": "https://api.pmps.ai/mcp"
+    }
+  }
+}
