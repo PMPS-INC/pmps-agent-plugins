@@ -1,7 +1,7 @@
 {
   "name": "pmps",
   "displayName": "PMPS",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Search Polymarket and Kalshi prediction markets, read live outcome probabilities and manage the PMPS tracked set. Sign in with a @pmps.ai Google account.",
   "author": {
     "name": "PMPS"

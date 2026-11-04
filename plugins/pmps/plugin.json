@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "pmps",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Search Polymarket and Kalshi prediction markets, read live outcome probabilities and manage the PMPS tracked set. Sign in with a @pmps.ai Google account.",
   "author": {
     "name": "PMPS",
