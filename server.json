@@ -3,7 +3,7 @@
   "name": "ai.pmps/pmps",
   "title": "PMPS",
   "description": "Polymarket and Kalshi prediction-market search, live probabilities and tracking.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "websiteUrl": "https://console.pmps.ai/mcp",
   "repository": {
     "url": "https://github.com/PMPS-INC/pmps-agent-plugins",

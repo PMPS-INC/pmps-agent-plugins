@@ -62,7 +62,15 @@ def main() -> int:
             if entry["name"] != "pmps":
                 errors.append(f"{rel}: entry name {entry['name']!r} does not match plugin name")
 
-    interface = docs["plugins/pmps/plugin.json"]["extensions"]["com.openai"]["interface"]
+    openai = docs["plugins/pmps/plugin.json"]["extensions"]["com.openai"]
+    try:
+        apps = json.loads((PLUGIN / openai["apps"]).read_text(encoding="utf-8"))["apps"]
+        if not all(str(app.get("id", "")).startswith(("asdk_app_", "plugin_asdk_app")) for app in apps.values()):
+            errors.append("plugins/pmps/.app.json: every app needs a ChatGPT app id")
+    except (KeyError, OSError, ValueError) as exc:
+        errors.append(f"plugins/pmps/.app.json: {exc}")
+
+    interface = openai["interface"]
     for key in ("logo", "composerIcon"):
         if not (PLUGIN / interface[key]).is_file():
             errors.append(f"plugins/pmps/plugin.json: {key} {interface[key]!r} is missing")

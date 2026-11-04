@@ -86,6 +86,7 @@ Then run `/mcp auth pmps`.
 | `.github/plugin/marketplace.json` | GitHub Copilot CLI marketplace |
 | `plugins/pmps/.claude-plugin/plugin.json`, `plugins/pmps/.mcp.json` | Claude Code plugin |
 | `plugins/pmps/plugin.json`, `plugins/pmps/mcp.json` | [Agent Plugins](https://agent-plugins.org) package: Codex (with `extensions.com.openai`) and Copilot CLI |
+| `plugins/pmps/.app.json` | ChatGPT app the plugin uses in ChatGPT web, desktop and mobile (`asdk_app_…` connection ID) |
 | `plugins/pmps/.cursor-plugin/plugin.json` | Cursor plugin |
 | `plugins/pmps/skills/pmps-markets/SKILL.md` | Shared skill for every plugin host |
 | `gemini-extension.json`, `GEMINI.md` | Gemini CLI extension (must stay at the repository root) |
